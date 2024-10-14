@@ -6,7 +6,7 @@
 /*   By: kyukang <kyukang@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 14:44:27 by kyukang           #+#    #+#             */
-/*   Updated: 2024/09/16 15:27:32 by kyukang          ###   ########.fr       */
+/*   Updated: 2024/10/14 20:29:44 by kyukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 # include <X11/X.h>
 # include "../libft/libft.h"
 
-# define IMG_HEIGHT	32
-# define IMG_WIDTH	32
+# define IMG_HEIGHT	16
+# define IMG_WIDTH	16
 
 # define KEY_UP		65362
 # define KEY_LEFT	65361

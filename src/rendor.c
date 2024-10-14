@@ -6,7 +6,7 @@
 /*   By: kyukang <kyukang@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/12 16:33:02 by kyukang           #+#    #+#             */
-/*   Updated: 2024/08/27 14:21:40 by kyukang          ###   ########.fr       */
+/*   Updated: 2024/10/14 20:17:14 by kyukang          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,12 @@
 
 static void	rendor_sprite(t_game *game, t_image sprite, int row, int column)
 {
-	mlx_put_image_to_window (game->mlx, game->window, sprite.xpm, \
-	column * sprite.x, row * sprite.y);
+	int	x;
+	int	y;
+
+	x = column * sprite.x;
+	y = row * sprite.y;
+	mlx_put_image_to_window (game->mlx, game->window, sprite.xpm, x, y);
 }
 
 void	identify_sprite(t_game *game, int y, int x)
